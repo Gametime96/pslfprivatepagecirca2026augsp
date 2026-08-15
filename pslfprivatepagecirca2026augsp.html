@@ -1,0 +1,61 @@
+<!-- pslfprivatepagecirca2026augsp.hp -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSLF Tracker - pslfprivatepagecirca2026augsp.com</title>
+    <link rel="stylesheet" href="pslfprivatepagecirca2026augsp.css">
+</head>
+<body>
+
+    <!-- Password Protection Overlay -->
+    <div id="auth-overlay" class="auth-overlay">
+        <div class="auth-box">
+            <h2>Restricted Access</h2>
+            <p>Please enter the password to view your PSLF tracker:</p>
+            <input type="password" id="password-input" placeholder="Enter password">
+            <button id="auth-btn">Submit</button>
+            <p id="auth-error" class="error-msg"></p>
+        </div>
+    </div>
+
+    <!-- Main Content Container (Hidden by default) -->
+    <div id="main-content" class="main-content hidden">
+        <header>
+            <h1>Public Service Loan Forgiveness (PSLF) Tracker</h1>
+            <p class="disclaimer">
+                <strong>Disclaimer:</strong> If and only if a payment is made on the payment due date will that very month count towards public service loan forgiveness (PSLF). A month worked for a qualifying employer up to but not including the date of payment due date shall not count towards PSLF.
+            </p>
+        </header>
+
+        <main>
+            <div class="table-container">
+                <table id="pslf-table">
+                    <thead>
+                        <tr>
+                            <th>Month</th>
+                            <th>Year</th>
+                            <th>Qualifying Checkmark</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- Rows populated dynamically by JavaScript starting Nov 2016 to July 2027 -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="status-section">
+                <div class="total-display">
+                    Total Checkmarks: <span id="running-total">0</span> / 120
+                </div>
+                <div id="status-message" class="status-message not-yet">
+                    NOT YET ACHIEVED 120 MONTHS.
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="pslfprivatepagecirca2026augsp.js"></script>
+</body>
+</html>
